@@ -1,0 +1,46 @@
+/*!
+
+ =========================================================
+ * Paper Dashboard 2 - v2.0.1
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/partials-2
+ * Copyright 2020 Creative Tim (http://www.creative-tim.com)
+
+ * Coded by www.creative-tim.com
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+@import "partials/variables";
+@import "partials/mixins";
+
+@import "bootstrap/bootstrap";
+
+// Core CSS
+@import "partials/buttons";
+@import "partials/typography";
+@import "partials/misc";
+
+// components
+@import "partials/navbar";
+@import "partials/page-header";
+@import "partials/alerts";
+@import "partials/images";
+@import "partials/tables";
+@import "partials/sidebar-and-main-panel";
+@import "partials/footers";
+@import "partials/fixed-plugin";
+
+// cards
+// @import "partials/cards";
+// @import "partials/cards/card-plain";
+// @import "partials/cards/card-chart";
+// @import "partials/cards/card-user";
+// @import "partials/cards/card-map";
+// @import "partials/cards/card-stats";
+
+@import "partials/responsive";
