@@ -28,12 +28,8 @@
     }
 
     .nav a {
-      i {
-        margin-right: 0;
-      }
-
       p {
-        display: none;
+        opacity: 0;
       }
     }
   }
@@ -88,6 +84,7 @@
     }
 
     li {
+      position: relative;
       > a + div .nav li > a {
         margin-top: 7px;
       }
@@ -110,6 +107,18 @@
         padding: 5px 8px;
       }
 
+      &.active {
+        &::before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 4px;
+          top: 0;
+          left: 0;
+          background: css-variable("primary");
+        }
+      }
+
       &.active > a,
       &.active > a > i {
         opacity: 1;
@@ -123,15 +132,19 @@
 
     i {
       font-size: 24px;
-      margin-right: 12px;
       line-height: 30px;
       width: 34px;
       text-align: center;
       color: $opacity-5;
       position: relative;
+      flex-shrink: 0;
     }
 
     p {
+      @include transition;
+      margin-left: 12px;
+      flex-grow: 1;
+      opacity: 1;
       margin-bottom: 0;
     }
 
