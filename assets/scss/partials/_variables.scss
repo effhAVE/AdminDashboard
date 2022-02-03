@@ -1,5 +1,8 @@
 $variable-prefix: "rg-";
 
+$font-family-sans-serif: "Poppins", "Helvetica", Arial, sans-serif;
+$font-size-base: 0.875rem; // 14px
+
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -12,11 +15,13 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$primary: #1599bc;
-$background: #f4f3ef;
+$primary: #1a3989;
+$secondary: #edeff4;
 
 $btn-font-size: 0.85rem;
+
 $breadcrumb-active-color: $primary;
+$breadcrumb-divider: quote(">");
 
 // $form-floating-input-padding-t: 0.5rem;
 // $form-floating-input-padding-b: 0.5rem;
@@ -25,31 +30,9 @@ $breadcrumb-active-color: $primary;
 // $form-floating-label-transform: scale(0.85) translateY(-1.1rem)
 //   translateX(0.15rem);
 
+$header-height: 65px;
+
 // PD2 variables:
-
-$font-color: #66615b !default;
-$fill-font-color: rgba(255, 255, 255, 0.8);
-$font-family-sans-serif: "Montserrat", "Helvetica", Arial, sans-serif;
-$sans-serif-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-
-$none: 0 !default;
-$border-thin: 1px !default;
-$border-thick: 2px !default;
-
-$white-color: #ffffff !default;
-$white-bg: #ffffff !default;
-$orange-bg: #e95e38 !default;
-
-$smoke-bg: #f5f5f5 !default;
-$light-black: #444 !default;
-
-$black-bg: rgba(30, 30, 30, 0.97) !default;
-
-$black-color: #2c2c2c !default;
-$black-hr: #444444 !default;
-
-$hr-line: rgba(0, 0, 0, 0.1) !default;
-
 $light-gray: #e3e3e3 !default;
 $medium-gray: #dddddd !default;
 $dark-gray: #9a9a9a !default;
@@ -139,14 +122,6 @@ $bg-warning: lighten($warning-color, 7%) !default;
 $bg-danger: lighten($danger-color, 7%) !default;
 $bg-brown: lighten($brown-color, 7%) !default;
 $bg-purple: lighten($purple-color, 7%) !default;
-
-//     brand Colors
-$brand-primary: $primary !default;
-$brand-info: $info-color !default;
-$brand-success: $success-color !default;
-$brand-warning: $warning-color !default;
-$brand-danger: $danger-color !default;
-$brand-inverse: $black-color !default;
 
 $link-disabled-color: #666666 !default;
 $dark-color: #212120 !default;
@@ -272,7 +247,6 @@ $font-paragraph: 1em !default;
 $font-size-navbar: 1em !default;
 $font-size-mini: 0.7142em !default;
 $font-size-small: 0.8571em !default;
-$font-size-base: 0.9rem;
 $font-size-large: 1rem !default;
 $font-size-large-navbar: 20px !default;
 $font-size-blockquote: 1.1em !default; // ~ 15px

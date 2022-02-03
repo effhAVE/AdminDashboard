@@ -93,11 +93,6 @@
       }
     }
 
-    .dropdown-menu .dropdown-item:focus,
-    .dropdown-menu .dropdown-item:hover {
-      color: $white-color;
-    }
-
     &.bg-white .dropdown-menu .dropdown-item:focus,
     &.bg-white .dropdown-menu .dropdown-item:hover {
       color: $default-color;
@@ -308,23 +303,6 @@
         left: -14px !important;
         right: auto !important;
       }
-    }
-  }
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .nav-tabs-navigation.verical-navs {
-    padding: 0px 2px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    .footer-nav {
-      padding-left: 21px;
-    }
-
-    .credits {
-      padding-right: 15px;
     }
   }
 }

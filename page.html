@@ -16,7 +16,7 @@
     />
     <!--     Fonts and icons     -->
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700,200"
       rel="stylesheet"
     />
     <link
@@ -34,7 +34,7 @@
         <div class="logo">
           <a href="./index.html" class="simple-text logo-mini">
             <div class="logo-image-small">
-              <img src="./assets/img/logo-small.png" />
+              <img src="./assets/img/logo-small.png" class="img-fluid" />
             </div>
             <!-- <p>CT</p> -->
           </a>
@@ -66,9 +66,7 @@
       </aside>
       <div class="main-panel">
         <!-- Navbar -->
-        <nav
-          class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent"
-        >
+        <nav class="navbar navbar-expand-lg bg-white">
           <div class="container-fluid">
             <div class="navbar-wrapper">
               <div class="aside-toggle me-4">
@@ -86,13 +84,23 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item" aria-current="page">
-                      <a href="#">Home</a>
-                    </li>
-                    <li class="breadcrumb-item" aria-current="page">
-                      <a href="#">Pages</a>
+                      <a href="#">
+                        <span class="badge bg-secondary text-primary">
+                          Home
+                        </span>
+                      </a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Home page
+                      <a href="pages-list.html">
+                        <span class="badge bg-secondary text-primary">
+                          Pages
+                        </span>
+                      </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <span class="badge bg-primary text-secondary">
+                        Home page
+                      </span>
                     </li>
                   </ol>
                 </nav>
@@ -166,193 +174,196 @@
         </nav>
         <!-- End Navbar -->
         <div class="content container-fluid">
-          <div class="row">
-            <div class="col-12 col-lg-8">
-              <div class="card">
-                <div class="card-header">
-                  <div class="page-languages d-flex">
-                    <select class="form-select">
-                      <option value="">Polish</option>
-                      <option value="">English</option>
-                      <option value="">German</option>
-                    </select>
-                  </div>
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control form-control-lg my-3"
-                      placeholder="Title"
-                      value="Home page"
-                      id="page-title"
-                    />
-                    <label for="page-title"> Title </label>
-                  </div>
-
-                  <div class="input-group">
-                    <span class="input-group-text bg-light">
-                      https://example.test/
-                    </span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      value="home-page"
-                      readonly
-                    />
-                    <button class="btn btn-outline-primary" type="button">
-                      <i class="fa fa-edit"></i>
-                      Edit
-                    </button>
-                    <button class="btn btn-outline-secondary" type="button">
-                      <i class="fa fa-search"></i>
-                      Preview
-                    </button>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3 class="h6 card-title">Content</h3>
-                  <textarea rows="30" class="form-control"></textarea>
-                </div>
-                <div class="card-footer">
-                  <button class="btn btn-primary">
-                    <i class="fa fa-check"></i>
-                    Save
-                  </button>
-                  <button class="btn btn-danger">
-                    <i class="fa fa-trash"></i>
-                    Delete
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <h3 class="h6 card-title">Status</h3>
-                      <div
-                        class="btn-group mb-3"
-                        role="group"
-                        aria-label="Basic radio toggle button group"
-                      >
-                        <input
-                          type="radio"
-                          class="btn-check"
-                          name="page-status"
-                          id="page-status--draft"
-                          autocomplete="off"
-                        />
-                        <label
-                          class="btn btn-outline-danger"
-                          for="page-status--draft"
-                        >
-                          <i class="fa fa-file"></i>
-                          Draft
-                        </label>
-
-                        <input
-                          type="radio"
-                          class="btn-check"
-                          name="page-status"
-                          id="page-status--planned"
-                          autocomplete="off"
-                          checked
-                        />
-                        <label
-                          class="btn btn-outline-warning"
-                          for="page-status--planned"
-                        >
-                          <i class="fa fa-calendar"></i>
-                          Planned
-                        </label>
-
-                        <input
-                          type="radio"
-                          class="btn-check"
-                          name="page-status"
-                          id="page-status--published"
-                          autocomplete="off"
-                        />
-                        <label
-                          class="btn btn-outline-success"
-                          for="page-status--published"
-                        >
-                          <i class="fa fa-check-circle"></i>
-                          Published
-                        </label>
+          <div class="content-entry">
+            <h1 class="title">Edit page</h1>
+            <p>Lorem ipsum doler</p>
+          </div>
+          <div class="card border-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-lg-8">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="page-languages d-flex">
+                        <select class="form-select">
+                          <option value="">Polish</option>
+                          <option value="">English</option>
+                          <option value="">German</option>
+                        </select>
                       </div>
                       <div class="form-floating">
-                        <input class="form-control" type="datetime-local" />
-                        <label for="">Planned publish</label>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <h3 class="h6 card-title">Featured image</h3>
-                      <div>------image-------</div>
-                      <img
-                        src="https://via.placeholder.com/350"
-                        alt=""
-                        class="img-fluid d-block"
-                      />
-
-                      <div class="page-image-options mt-3">
-                        <button class="btn btn-primary">
-                          <i class="fa fa-refresh"></i>
-                          Change
-                        </button>
-                        <button class="btn btn-danger">
-                          <i class="fa fa-trash"></i> Delete
-                        </button>
-                      </div>
-
-                      <div>-----No image------</div>
-                      <button class="btn btn-primary">
-                        <i class="fa fa-file"></i>
-                        Select
-                      </button>
-                    </li>
-                    <li class="list-group-item">
-                      <h3 class="h6 card-title">SEO</h3>
-                      <div class="mb-3">
-                        <div class="form-check form-switch">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="page-seo-automatic"
-                            checked
-                          />
-                          <label
-                            class="form-check-label"
-                            for="page-seo-automatic"
-                          >
-                            Use content as SEO fields
-                          </label>
-                        </div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="page-seo-title" class="form-label">
-                          Title
-                        </label>
                         <input
                           type="text"
-                          class="form-control form-control-sm"
-                          id="page-seo-title"
+                          class="form-control form-control-lg my-3"
+                          placeholder="Title"
                           value="Home page"
+                          id="page-title"
+                        />
+                        <label for="page-title"> Title </label>
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-text bg-light">
+                          https://example.test/
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="home-page"
                           readonly
                         />
+                        <button class="btn btn-outline-primary" type="button">
+                          <i class="fa fa-edit"></i>
+                          <span>Edit</span>
+                        </button>
+                        <button class="btn btn-outline-primary" type="button">
+                          <i class="fa fa-search"></i>
+                          <span>Preview</span>
+                        </button>
                       </div>
-                      <div class="mb-3">
-                        <label for="page-seo-desc" class="form-label">
-                          Description
-                        </label>
-                        <textarea
-                          class="form-control form-control-sm"
-                          id="page-seo-desc"
-                        ></textarea>
-                      </div>
-                    </li>
-                  </ul>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="h6 card-title">Content</h3>
+                      <textarea rows="30" class="form-control"></textarea>
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary">
+                        <i class="fa fa-check"></i>
+                        <span>Save</span>
+                      </button>
+                      <button class="btn btn-danger">
+                        <i class="fa fa-trash"></i>
+                        <span>Delete</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <h3 class="h6 card-title">Status</h3>
+                          <div
+                            class="btn-group mb-3"
+                            role="group"
+                            aria-label="Basic radio toggle button group"
+                          >
+                            <input
+                              type="radio"
+                              class="btn-check"
+                              name="page-status"
+                              id="page-status--draft"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn-outline-danger"
+                              for="page-status--draft"
+                            >
+                              <i class="fa fa-file"></i>
+                              <span>Draft</span>
+                            </label>
+                            <input
+                              type="radio"
+                              class="btn-check"
+                              name="page-status"
+                              id="page-status--planned"
+                              autocomplete="off"
+                              checked
+                            />
+                            <label
+                              class="btn btn-outline-warning"
+                              for="page-status--planned"
+                            >
+                              <i class="fa fa-calendar"></i>
+                              <span>Planned</span>
+                            </label>
+                            <input
+                              type="radio"
+                              class="btn-check"
+                              name="page-status"
+                              id="page-status--published"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn-outline-success"
+                              for="page-status--published"
+                            >
+                              <i class="fa fa-check-circle"></i>
+                              <span>Published</span>
+                            </label>
+                          </div>
+                          <div class="form-floating">
+                            <input class="form-control" type="datetime-local" />
+                            <label for="">Planned publish</label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <h3 class="h6 card-title">Featured image</h3>
+                          <div>------image-------</div>
+                          <img
+                            src="https://via.placeholder.com/350"
+                            alt=""
+                            class="img-fluid d-block"
+                          />
+                          <div class="page-image-options mt-3">
+                            <button class="btn btn-primary">
+                              <i class="fa fa-refresh"></i>
+                              <span>Change</span>
+                            </button>
+                            <button class="btn btn-danger">
+                              <i class="fa fa-trash"></i> <span>Delete</span>
+                            </button>
+                          </div>
+                          <div>-----No image------</div>
+                          <button class="btn btn-primary">
+                            <i class="fa fa-file"></i>
+                            <span>Select</span>
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <h3 class="h6 card-title">SEO</h3>
+                          <div class="mb-3">
+                            <div class="form-check form-switch">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                role="switch"
+                                id="page-seo-automatic"
+                                checked
+                              />
+                              <label
+                                class="form-check-label"
+                                for="page-seo-automatic"
+                              >
+                                Use content as SEO fields
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="page-seo-title" class="form-label">
+                              Title
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control form-control-sm"
+                              id="page-seo-title"
+                              value="Home page"
+                              readonly
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="page-seo-desc" class="form-label">
+                              Description
+                            </label>
+                            <textarea
+                              class="form-control form-control-sm"
+                              id="page-seo-desc"
+                            ></textarea>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
