@@ -11,6 +11,22 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.container-main {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .breadcrumb {
   align-items: center;
+}
+
+.badge {
+  line-height: $line-height-base;
+}
+
+.btn,
+.input-group {
+  .fa:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }

@@ -51,7 +51,6 @@
               </a>
             </li>
             <li
-              class="active"
               data-bs-toggle="tooltip"
               data-bs-placement="right"
               title="Pages"
@@ -61,7 +60,7 @@
                 <p>Pages</p>
               </a>
             </li>
-            <li>
+            <li class="active">
               <a href="./users-list.html">
                 <i class="fa fa-users"></i>
                 <p>Users</p>
@@ -98,7 +97,7 @@
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                       <span class="badge bg-primary text-secondary">
-                        Pages
+                        Users
                       </span>
                     </li>
                   </ol>
@@ -174,8 +173,8 @@
         <!-- End Navbar -->
         <div class="content container-fluid container-main">
           <div class="content-entry">
-            <h1 class="title">Pages</h1>
-            <p>Manage your pages</p>
+            <h1 class="title">Users</h1>
+            <p>Manage your users</p>
           </div>
           <div class="card border-0">
             <div class="card-body">
@@ -229,11 +228,12 @@
                       </caption>
                       <thead class="text-primary">
                         <tr class="text-dark">
-                          <th class="table-check-header py-0 border-0"></th>
-                          <th class="py-0 border-0">Title</th>
-                          <th class="py-0 border-0">Author</th>
-                          <th class="py-0 border-0">Date</th>
-                          <th class="py-0 border-0 text-end">Actions</th>
+                          <th class="table-check-header border-0 py-0"></th>
+                          <th class="py-0 border-0">Name</th>
+                          <th class="py-0 border-0">E-mail</th>
+                          <th class="py-0 border-0">Registration</th>
+                          <th class="py-0 border-0">Roles</th>
+                          <th class="py-0 border-0">Actions</th>
                         </tr>
                         <tr class="table-filters">
                           <td>
@@ -268,6 +268,14 @@
                               placeholder="18.01.2022"
                             />
                           </td>
+                          <td>
+                            <input
+                              type="text"
+                              value=""
+                              class="form-control form-control-sm"
+                              placeholder="Role"
+                            />
+                          </td>
                           <td></td>
                         </tr>
                       </thead>
@@ -281,9 +289,13 @@
                               aria-label="Select page"
                             />
                           </td>
-                          <td><a href="./page-editing.html">Home page</a></td>
-                          <td><a href="#">admin</a></td>
-                          <td>14.01.2022 21:50</td>
+                          <td><a href="./user-profile.html">admin</a></td>
+                          <td>admin@example.test</td>
+                          <td>14.01.2022 21:55</td>
+                          <td>
+                            <span class="badge bg-primary">Admin</span>
+                            <span class="badge bg-primary">Moderator</span>
+                          </td>
                           <td>
                             <ul
                               class="d-flex list-unstyled m-0 gap-2 justify-content-end"
@@ -311,129 +323,10 @@
                               aria-label="Select page"
                             />
                           </td>
-                          <td><a href="#">About us</a></td>
-                          <td><a href="#">admin</a></td>
+                          <td><a href="#">Pomstiborius</a></td>
+                          <td>pomsti@example.test</td>
                           <td>14.01.2022 21:50</td>
-                          <td>
-                            <ul
-                              class="d-flex list-unstyled m-0 gap-2 justify-content-end"
-                            >
-                              <li>
-                                <a href="#" class="">
-                                  <i class="fa fa-gears"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" class="text-danger">
-                                  <i class="fa fa-trash"></i>
-                                </a>
-                              </li>
-                              <li><a href="#"></a></li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              aria-label="Select page"
-                            />
-                          </td>
-                          <td><a href="#">Privacy policy</a></td>
-                          <td><a href="#">admin</a></td>
-                          <td>14.01.2022 21:50</td>
-                          <td>
-                            <ul
-                              class="d-flex list-unstyled m-0 gap-2 justify-content-end"
-                            >
-                              <li>
-                                <a href="#" class="">
-                                  <i class="fa fa-gears"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" class="text-danger">
-                                  <i class="fa fa-trash"></i>
-                                </a>
-                              </li>
-                              <li><a href="#"></a></li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              aria-label="Select page"
-                            />
-                          </td>
-                          <td><a href="#">Checkout</a></td>
-                          <td><a href="#">admin</a></td>
-                          <td>14.01.2022 21:50</td>
-                          <td>
-                            <ul
-                              class="d-flex list-unstyled m-0 gap-2 justify-content-end"
-                            >
-                              <li>
-                                <a href="#" class="">
-                                  <i class="fa fa-gears"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" class="text-danger">
-                                  <i class="fa fa-trash"></i>
-                                </a>
-                              </li>
-                              <li><a href="#"></a></li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              aria-label="Select page"
-                            />
-                          </td>
-                          <td><a href="#">Cart</a></td>
-                          <td><a href="#">admin</a></td>
-                          <td>14.01.2022 21:50</td>
-                          <td>
-                            <ul
-                              class="d-flex list-unstyled m-0 gap-2 justify-content-end"
-                            >
-                              <li>
-                                <a href="#" class="">
-                                  <i class="fa fa-gears"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" class="text-danger">
-                                  <i class="fa fa-trash"></i>
-                                </a>
-                              </li>
-                              <li><a href="#"></a></li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              aria-label="Select page"
-                            />
-                          </td>
-                          <td><a href="#">Test</a></td>
-                          <td><a href="#">Editor</a></td>
-                          <td>14.01.2022 21:50</td>
+                          <td><span class="badge bg-primary">User</span></td>
                           <td>
                             <ul
                               class="d-flex list-unstyled m-0 gap-2 justify-content-end"

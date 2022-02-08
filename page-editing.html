@@ -67,7 +67,7 @@
       <div class="main-panel">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-white">
-          <div class="container-fluid">
+          <div class="container-fluid container-main">
             <div class="navbar-wrapper">
               <div class="aside-toggle me-4">
                 <button
@@ -173,7 +173,7 @@
           </div>
         </nav>
         <!-- End Navbar -->
-        <div class="content container-fluid">
+        <div class="content container-fluid container-main">
           <div class="content-entry">
             <h1 class="title">Edit page</h1>
             <p>Lorem ipsum doler</p>
@@ -182,28 +182,37 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-12 col-lg-8">
-                  <div class="card">
-                    <div class="card-header">
-                      <div class="page-languages d-flex">
-                        <select class="form-select">
-                          <option value="">Polish</option>
-                          <option value="">English</option>
-                          <option value="">German</option>
-                        </select>
-                      </div>
-                      <div class="form-floating">
-                        <input
-                          type="text"
-                          class="form-control form-control-lg my-3"
-                          placeholder="Title"
-                          value="Home page"
-                          id="page-title"
-                        />
-                        <label for="page-title"> Title </label>
-                      </div>
-                      <div class="input-group">
+                  <div class="card border-0 h-100">
+                    <div class="card-header bg-transparent">
+                      <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            aria-current="true"
+                            href="#"
+                          >
+                            English
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Polish</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">German</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa fa-plus me-2"></i>
+                            <span>Add new</span></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <div class="input-group my-3">
                         <span class="input-group-text bg-light">
-                          https://example.test/
+                          <i class="fa fa-globe text-primary"></i>
+                          <span>https://example.test/</span>
                         </span>
                         <input
                           type="text"
@@ -215,32 +224,60 @@
                           <i class="fa fa-edit"></i>
                           <span>Edit</span>
                         </button>
-                        <button class="btn btn-outline-primary" type="button">
+                        <a
+                          href="https://example.test/home-page"
+                          class="btn btn-outline-primary"
+                          type="button"
+                        >
                           <i class="fa fa-search"></i>
                           <span>Preview</span>
-                        </button>
+                        </a>
                       </div>
-                    </div>
-                    <div class="card-body">
-                      <h3 class="h6 card-title">Content</h3>
-                      <textarea rows="30" class="form-control"></textarea>
-                    </div>
-                    <div class="card-footer">
-                      <button class="btn btn-primary">
-                        <i class="fa fa-check"></i>
-                        <span>Save</span>
-                      </button>
-                      <button class="btn btn-danger">
-                        <i class="fa fa-trash"></i>
-                        <span>Delete</span>
-                      </button>
+                      <input
+                        type="text"
+                        class="form-control form-control-xl my-3 form-control-plaintext"
+                        placeholder="Title"
+                        value="Home page"
+                        id="page-title"
+                      />
+                      <textarea
+                        rows="30"
+                        class="form-control form-control-plaintext"
+                        placeholder="Add some content here"
+                      >
+ <button class="btn btn-primary">
+  <i class="fa fa-check"></i>
+  <span>Save</span>
+</button>
+                      </textarea>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 col-lg-4">
+                  <div class="mb-2 text-end">
+                    <button class="btn btn-outline-primary">
+                      <i class="fa fa-check"></i>
+                      <span>Save</span>
+                    </button>
+                    <button class="btn btn-outline-danger">
+                      <i class="fa fa-trash"></i>
+                      <span>Delete</span>
+                    </button>
+                  </div>
                   <div class="card">
                     <div class="card-body">
                       <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <h3 class="h5 card-title">Summary</h3>
+                          <div class="d-flex justify-content-between">
+                            <div>Created by:</div>
+                            <div class="text-end"><a href="">admin</a></div>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <div>Published:</div>
+                            <div class="text-end">Feb 08 2022 17:09</div>
+                          </div>
+                        </li>
                         <li class="list-group-item">
                           <h3 class="h6 card-title">Status</h3>
                           <div

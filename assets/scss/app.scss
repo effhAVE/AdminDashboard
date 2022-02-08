@@ -5,13 +5,13 @@
 @import "bootstrap/bootstrap";
 
 // Core CSS
-@import "partials/buttons";
 @import "partials/typography";
+@import "partials/buttons";
+@import "partials/forms";
 @import "partials/misc";
 
 // components
 @import "partials/navbar";
-@import "partials/tables";
 @import "partials/sidebar-and-main-panel";
 @import "partials/footers";
 
